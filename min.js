@@ -1,8 +1,8 @@
-//html5 ie hack
-document.createElement("article");
-document.createElement("footer");
+//html5 IE hack
 document.createElement("header");
 document.createElement("hgroup");
+document.createElement("article");
+document.createElement("footer");
 document.createElement("nav");
 
 // select active tag
