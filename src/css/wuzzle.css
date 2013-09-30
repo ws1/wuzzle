@@ -1,0 +1,136 @@
+/*! Wuzzle | GPL v3 license | http://git.io/wuzzle */
+
+/*
+ * Scaffolding
+ */
+
+/* Re-set box sizing */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 2%;
+  font: 100%/20px sans-serif;
+  color: #666;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body {font-size: 70%;}
+}
+
+@media screen and (max-width: 991px) {
+  body {font-size: 90%;}
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+/* Nuke margins */
+hr, pre, p, ul, ol,
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
+
+/* Subscript and superscript */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/*
+ * Grid
+ */
+
+/* Centered container */
+.container {
+  max-width: 96%;
+  margin: 0 auto;
+}
+
+/* Wuzzle columns */
+.w1,
+.w2,
+.w3,
+.w4,
+.w5,
+.w6,
+.w7,
+.w8,
+.w9,
+.w10 {
+  float:left;
+  height: auto;
+  padding: 1%;
+}
+
+/* Precise and responsive 10-column sizing */
+@media (min-width: 992px) {
+  .w1  {width: 8%;}
+  .w2  {width: 18%;}
+  .w3  {width: 28%;}
+  .w4  {width: 38%;}
+  .w5  {width: 48%;}
+  .w6  {width: 58%;}
+  .w7  {width: 68%;}
+  .w8  {width: 78%;}
+  .w9  {width: 88%;}
+  .w10 {width: 98%;}
+}
+
+/*
+ * Utilities
+ */
+
+/* Clearfix [http://nicolasgallagher.com/micro-clearfix-hack/] */
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after,
+.container:after,
+.row:after {
+  clear: both;
+}
+
+/* Floats */
+.pull-right {float: right !important;}
+.pull-left  {float: left !important;}
+
+/* Toggling content */
+.show {display: block !important;}
+
+.hide {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.invisible {visibility: hidden;}
+
+/* Screenreaders-only */
+.sr-only {display: none !important;}
