@@ -105,16 +105,13 @@ sub {bottom: -0.25em;}
 .clearfix:before,
 .clearfix:after,
 .container:before,
-.container:after,
-.row:before,
-.row:after {
+.container:after {
   display: table;
   content: " ";
 }
 
 .clearfix:after,
-.container:after,
-.row:after {
+.container:after {
   clear: both;
 }
 
