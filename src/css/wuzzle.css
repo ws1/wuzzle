@@ -257,17 +257,6 @@ ol ol {
   margin-bottom: 0;
 }
 
-/* Subscript and superscript */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-
-sup {top: -0.5em;}
-sub {bottom: -0.25em;}
-
 /*
  * Grid
  */
@@ -336,10 +325,20 @@ sub {bottom: -0.25em;}
 
 .hide {
   display: none !important;
-  visibility: hidden !important;
+  visibility: hidden;
 }
 
 .invisible {visibility: hidden;}
 
-/* Screenreaders-only */
-.sr-only {display: none !important;}
+/* Screenreaders-only
+   [http://a11yproject.com/posts/how-to-hide-content] */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
