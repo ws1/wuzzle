@@ -302,7 +302,8 @@ ol ol {
  * Utilities
  */
 
-/* Clearfix [http://nicolasgallagher.com/micro-clearfix-hack/] */
+/* Clearfix
+   [http://nicolasgallagher.com/micro-clearfix-hack/] */
 .clearfix:before,
 .clearfix:after,
 .container:before,
