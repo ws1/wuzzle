@@ -4,4 +4,4 @@
 
 Contains good CSS and JS components.
 
-Licensed under the terms of GPL v3 license.
+Licensed under the GPL v3 license.
