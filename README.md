@@ -1,6 +1,6 @@
 # Wuzzle
 
-**Our UI puzzle.**
+**Our UI puzzle**
 
 Contains good CSS and JS components.
 
