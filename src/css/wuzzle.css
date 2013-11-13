@@ -245,7 +245,7 @@ hr {
 }
 
 /* Nuke margins */
-hr, pre, p, ul, ol,
+hr, pre, p, ul, ol, dl,
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
@@ -284,7 +284,7 @@ ol ol {
   padding-left: 1%;
 }
 
-/* Precise and responsive 10-column sizing */
+/* Responsive 10-column sizing */
 @media (min-width: 992px) {
   .w1  {width: 8%;}
   .w2  {width: 18%;}
