@@ -1,0 +1,35 @@
+//
+// Variables
+//
+
+// Base variables
+// --------------
+
+// Number of columns
+@grid-columns:        10;
+
+// Gutter width
+@grid-gutter-width:   4%;
+
+// Container width
+@container-width:     96%;
+
+// Media queries breakpoints
+// -------------------------
+
+// Extra small screen / phone
+@screen-xs-min:       480px;
+
+// Small screen / tablet
+@screen-sm-min:       768px;
+
+// Medium screen / desktop
+@screen-md-min:       992px;
+
+// Large screen / wide desktop
+@screen-lg-min:       1200px;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:       (@screen-sm-min - 1);
+@screen-sm-max:       (@screen-md-min - 1);
+@screen-md-max:       (@screen-lg-min - 1);
