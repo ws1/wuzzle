@@ -16,4 +16,4 @@ Use [RECESS](http://twitter.github.io/recess/),
 
 There is also Makefile, so run `make` and you'll get compiled code.
 
-Pre-compiled files are located in `dist/`.
+Pre-compiled files are in `dist/`.
