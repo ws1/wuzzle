@@ -178,11 +178,11 @@
     @item: ~".col-@{class}-@{index}";
     .col(@index + 1, @item);
   }
-  .col(@index, @list) when (@index < @grid-columns) {
+  .col(@index, @list) when (@index =< @grid-columns) {
     @item: ~".col-@{class}-@{index}";
     .col(@index + 1, ~"@{list}, @{item}");
   }
-  .col(@index, @list) when (@index = @grid-columns) {
+  .col(@index, @list) when (@index > @grid-columns) {
     @{list} {
       float: left;
     }
