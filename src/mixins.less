@@ -5,7 +5,7 @@
 // Utilities
 // ---------
 
-// Easily set box sizing
+// Set box sizing
 .box-sizing(@box-model) {
   -moz-box-sizing: @box-model;
        box-sizing: @box-model;
@@ -25,7 +25,7 @@
   }
 }
 
-// Easily include all the states for responsive-utilities.less
+// State mixins for responsive utilities
 .responsive-visibility() {
   display: block !important;
   tr& { display: table-row !important; }
