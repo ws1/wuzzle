@@ -4,7 +4,7 @@ CSS_MIN ?= ./dist/wuzzle.min.css
 CHECK = \033[32m✔ Done\033[39m
 
 #
-# Compile code
+# Compile LESS
 #
 
 # Depends on `recess` npm module.
