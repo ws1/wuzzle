@@ -742,17 +742,9 @@
   float: none !important;
 }
 
-.shown {
-  display: block !important;
-}
-
 .hidden {
   display: none !important;
   visibility: hidden;
-}
-
-.visible {
-  visibility: visible;
 }
 
 .invisible {
