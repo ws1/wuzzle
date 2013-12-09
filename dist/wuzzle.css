@@ -33,6 +33,31 @@
   clear: both;
 }
 
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid:before,
+.container-fluid:after {
+  display: table;
+  content: " ";
+}
+
+.container-fluid:after {
+  clear: both;
+}
+
+.container-fluid:before,
+.container-fluid:after {
+  display: table;
+  content: " ";
+}
+
+.container-fluid:after {
+  clear: both;
+}
+
 .row {
   margin-right: -2%;
   margin-left: -2%;

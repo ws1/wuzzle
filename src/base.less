@@ -9,9 +9,15 @@
   .box-sizing(border-box);
 }
 
-// Centered container
+// Fixed container
 .container {
+  width: @container-width;
   .make-container();
+}
+
+// Fluid container
+.container-fluid {
+  .make-container()
 }
 
 // Wrapper for series of columns
