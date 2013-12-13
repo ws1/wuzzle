@@ -7,12 +7,12 @@ CHECK = \033[32m✔ Done\033[39m
 # Compile LESS
 #
 
-# Depends on `recess` npm module.
+# Depends on `lessc` npm module.
 
 build:
 	@printf "\nCompiling and minifying LESS..."
-	@recess --compile ${LESS} > ${CSS}
-	@recess --compress ${LESS} > ${CSS_MIN}
+	@lessc ${LESS} > ${CSS}
+	@lessc -x ${LESS} > ${CSS_MIN}
 	@printf " \033[32m✔ Done\033[39m\n\n"
 	@echo "\033[37mThanks for using Wuzzle!\n"
 

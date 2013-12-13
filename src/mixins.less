@@ -48,14 +48,16 @@
 .make-container() {
   margin-right: auto;
   margin-left: auto;
-  .clearfix();
+
+  &:extend(.clearfix all);
 }
 
 // Generate a wrapper for a series of columns
 .make-row(@gutter: @grid-gutter-width) {
   margin-right: (@gutter / -2);
   margin-left: (@gutter / -2);
-  .clearfix();
+
+  &:extend(.clearfix all);
 }
 
 // Generate the extra small columns

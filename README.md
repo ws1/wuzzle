@@ -11,8 +11,7 @@ Licensed under the GPL v3.
 
 ## Compiling
 
-Use [RECESS](http://twitter.github.io/recess/),
-[lessc](https://github.com/less/less.js), or whatever else to compile LESS.
+Use [lessc](https://github.com/less/less.js) 1.5.x to compile code.
 
 There is also Makefile, so run `make` and you'll get compiled code.
 
