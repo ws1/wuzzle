@@ -1,6 +1,6 @@
 # Wuzzle
 
-**Our grid puzzle**
+> Minimal, customizable and responsive grid system
 
 Contains CSS grid components.
 
@@ -13,6 +13,6 @@ Licensed under the GPL v3.
 
 Use [lessc](https://github.com/less/less.js) 1.5.x to compile code.
 
-There is also Makefile, so run `make` and you'll get compiled code.
+There is also Makefile. Run `make` and you'll get compiled code.
 
 Compiled files are in `dist/`.
