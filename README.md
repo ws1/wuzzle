@@ -11,7 +11,7 @@ Licensed under the GPL v3.
 
 ## Compiling
 
-Use [lessc](https://github.com/less/less.js) 1.5.x to compile code.
+Use [lessc](https://github.com/less/less.js) (latest stable) to compile code.
 
 There is also Makefile. Run `make` and you'll get compiled code.
 
