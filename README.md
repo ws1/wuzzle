@@ -2,8 +2,6 @@
 
 > Minimal, customizable and responsive grid system
 
-Contains CSS grid components.
-
 To get started, check out
 [the documentation](https://github.com/ws1/wuzzle/wiki).
 
@@ -11,8 +9,27 @@ Licensed under the GPL v3.
 
 ## Compiling
 
-Use [lessc](https://github.com/less/less.js) (latest stable) to compile code.
+Wuzzle uses [Grunt](http://gruntjs.com) for working with the framework.
 
-There is also Makefile. Run `make` and you'll get compiled code.
+### Set up
 
-Compiled files are in `dist/`.
+You'd need [node.js](http://nodejs.org/download/) to work with Grunt.
+
+From the command line:
+
+```bash
+$ npm install -g grunt-cli`
+$ npm install # from root wuzzle/ directory
+```
+
+When completed, you'll be able to run the various Grunt commands provided from the command line.
+
+### Available commands
+
+#### Build — `grunt`
+
+Simply compiles LESS files.
+
+#### Watch - `grunt watch`
+
+Watches Less files and automatically building them whenever you save.
