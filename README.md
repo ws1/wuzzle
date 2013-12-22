@@ -1,11 +1,16 @@
 # Wuzzle
 
-> Minimal, customizable and responsive grid system
+> Responsive, minimal and customizable grid system
 
 To get started, check out
 [the documentation](https://github.com/ws1/wuzzle/wiki).
 
 Licensed under the GPL v3.
+
+## Download
+
+* [**Fine-packed ZIP**](https://github.com/ws1/wuzzle/archive/master.zip)
+* **Bower:** `bower install wuzzle`
 
 ## Compiling
 
