@@ -36,6 +36,6 @@ the command line.
 
 Compiles LESS files.
 
-#### Watch - `grunt watch`
+#### Watch — `grunt watch`
 
 Watches Less files and automatically building them whenever you save.
