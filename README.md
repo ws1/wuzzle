@@ -14,11 +14,11 @@ Licensed under the GPL v3.
 
 ## Compiling
 
-Wuzzle uses [Grunt](http://gruntjs.com) for working with the framework.
+Wuzzle uses [Grunt](http://gruntjs.com) to compile source code.
 
 ### Set up
 
-You'd need [node.js](http://nodejs.org/download/) to work with Grunt.
+You need [node.js](http://nodejs.org/download/) to work with Grunt.
 
 From the command line:
 
@@ -27,13 +27,14 @@ $ npm install -g grunt-cli`
 $ npm install # from root wuzzle/ directory
 ```
 
-When completed, you'll be able to run the various Grunt commands provided from the command line.
+When completed, you'll be able to run the various Grunt commands provided from
+the command line.
 
 ### Available commands
 
 #### Build — `grunt`
 
-Simply compiles LESS files.
+Compiles LESS files.
 
 #### Watch - `grunt watch`
 
