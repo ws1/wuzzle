@@ -12,19 +12,19 @@ Licensed under the GPL v3.
 * [**Fine-packed ZIP**](https://github.com/ws1/wuzzle/archive/master.zip)
 * **Bower:** `bower install wuzzle`
 
-## Compiling
+## Compile
 
 Wuzzle uses [Grunt](http://gruntjs.com) to compile source code.
 
-### Set up
+### Dependencies
 
-You need [node.js](http://nodejs.org/download/) to work with Grunt.
+You need [node.js](http://nodejs.org/download/) to use Grunt.
 
 From the command line:
 
 ```bash
 $ npm install -g grunt-cli`
-$ npm install # from root wuzzle/ directory
+$ npm install # from root Wuzzle directory
 ```
 
 When completed, you'll be able to run the various Grunt commands provided from
