@@ -16,7 +16,7 @@ module.exports = function (grunt) {
       banner: '/*! Wuzzle <%= pkg.version %> | <%= _.pluck(pkg.licenses, "type") %> | http//git.io/wuzzle */\n'
     },
 
-    // Tasks configuration
+    // Tasks
     clean: {
       dist: ['dist']
     },
@@ -67,7 +67,7 @@ module.exports = function (grunt) {
     watch: {
       less: {
         files: 'src/*.less',
-        tasks: ['less']
+        tasks: ['less', 'csscomb', 'usebanner']
       }
     }
   });
