@@ -26,18 +26,16 @@
 }
 
 // State mixins for responsive utilities
-.responsive-visibility() {
+.responsive-visible() {
   display: block !important;
+
   tr& { display: table-row !important; }
   th&,
   td& { display: table-cell !important; }
 }
 
-.responsive-invisibility() {
-    &,
-  tr&,
-  th&,
-  td& { display: none !important; }
+.responsive-hidden() {
+  display: none !important;
 }
 
 // Generate grid
