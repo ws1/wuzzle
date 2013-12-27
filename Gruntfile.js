@@ -44,7 +44,7 @@ module.exports = function (grunt) {
           sortOrder: '.csscomb.json'
         },
         files: {
-          '<%= wuzzle.css %>': ['<%= wuzzle.css %>'],
+          '<%= wuzzle.css %>': ['<%= wuzzle.css %>']
         }
       }
     },
