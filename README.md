@@ -1,4 +1,4 @@
-# Wuzzle
+# Wuzzle [![devDependency status](https://david-dm.org/ws1/wuzzle/dev-status.png?theme=shields.io)](https://david-dm.org/ws1/wuzzle#info=devDependencies)
 
 > Responsive, minimal and customizable grid system
 
