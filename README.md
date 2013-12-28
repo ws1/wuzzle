@@ -23,7 +23,7 @@ You need [node.js](http://nodejs.org/download/) to use Grunt.
 From the command line:
 
 ```bash
-$ npm install -g grunt-cli`
+$ npm install -g grunt-cli
 $ npm install # from root Wuzzle directory
 ```
 
