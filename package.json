@@ -1,10 +1,7 @@
 {
   "name": "wuzzle",
   "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ws1/wuzzle.git"
-  },
+  "repository": "ws1/wuzzle",
   "licenses": [{
     "type": "GPL v3",
     "url": "https://github.com/ws1/wuzzle/blob/master/LICENSE"
