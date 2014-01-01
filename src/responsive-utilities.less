@@ -3,33 +3,32 @@
 //
 
 // Toggle visibility over a various screen sizes
-.visible-xs {
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
   .responsive-hidden();
+}
 
+.visible-xs {
   @media (max-width: @screen-xs-max) {
     .responsive-visible();
   }
 }
 
 .visible-sm {
-  .responsive-hidden();
-
   @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
     .responsive-visible();
   }
 }
 
 .visible-md {
-  .responsive-hidden();
-
   @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
     .responsive-visible();
   }
 }
 
 .visible-lg {
-  .responsive-hidden();
-
   @media (min-width: @screen-lg-min) {
     .responsive-visible();
   }
