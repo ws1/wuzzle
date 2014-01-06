@@ -14,7 +14,7 @@ Licensed under the MIT License.
 
 ## Compile
 
-Wuzzle uses [Grunt](http://gruntjs.com) to compile source code.
+Wuzzle uses [Grunt](http://gruntjs.com) to compile Less code.
 
 ### Dependencies
 
