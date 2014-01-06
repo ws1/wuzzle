@@ -9,7 +9,7 @@ Licensed under the MIT License.
 
 ## Download
 
-* [**Fine-packed ZIP**](https://github.com/ws1/wuzzle/archive/master.zip)
+* [**ZIP package**](https://github.com/ws1/wuzzle/archive/master.zip)
 * **Bower:** `bower install wuzzle`
 
 ## Compile
