@@ -13,7 +13,7 @@ module.exports = function (grunt) {
       less: 'src/wuzzle.less',
       css: 'dist/wuzzle.css',
       cssMin: 'dist/wuzzle.min.css',
-      banner: '/*! Wuzzle <%= pkg.version %> | <%= _.pluck(pkg.licenses, "type") %> | http//git.io/wuzzle */\n'
+      banner: '/*! Wuzzle <%= pkg.version %> | <%= pkg.license %> License | http//git.io/wuzzle */\n'
     },
 
     // Tasks

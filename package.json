@@ -2,10 +2,7 @@
   "name": "wuzzle",
   "version": "1.0.0",
   "repository": "ws1/wuzzle",
-  "licenses": [{
-    "type": "GPL v3",
-    "url": "https://github.com/ws1/wuzzle/blob/master/LICENSE"
-  }],
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-banner": "~0.2.0",
