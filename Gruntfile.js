@@ -9,6 +9,7 @@ module.exports = function (grunt) {
     // Metadata
     pkg: grunt.file.readJSON('package.json'),
 
+    // Paths
     wuzzle: {
       less: 'src/wuzzle.less',
       css: 'dist/wuzzle.css',
@@ -16,7 +17,7 @@ module.exports = function (grunt) {
       banner: '/*! Wuzzle <%= pkg.version %> | <%= pkg.license %> License | http//git.io/wuzzle */\n'
     },
 
-    // Tasks
+    // Tasks configuration
     clean: {
       dist: ['dist']
     },
@@ -72,7 +73,7 @@ module.exports = function (grunt) {
     }
   });
 
-  // These plugins provide necessary tasks
+  // Load plugins
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   // Default task
