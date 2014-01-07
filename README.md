@@ -5,8 +5,6 @@
 To get started, check out
 [the documentation](https://github.com/ws1/wuzzle/wiki).
 
-Licensed under the MIT License.
-
 ## Download
 
 * [**ZIP package**](https://github.com/ws1/wuzzle/archive/master.zip)
@@ -39,3 +37,7 @@ Compiles LESS files.
 #### Watch: `grunt watch`
 
 Watches Less files and automatically building them whenever you save.
+
+## License
+
+MIT &copy; [ws1 team](https://github.com/ws1)
