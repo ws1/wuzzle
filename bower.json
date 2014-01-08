@@ -1,7 +1,7 @@
 {
   "name": "wuzzle",
   "version": "1.0.0",
-  "author": "Zlatan Vasović",
+  "author": "ws1 team",
   "description": "Responsive, minimal and customizable grid system",
   "homepage": "https://github.com/ws1/wuzzle",
   "main": "dist/wuzzle.css",
