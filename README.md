@@ -33,13 +33,22 @@ the command line.
 
 ### Available commands
 
-#### Build: `grunt`
+#### Default: `grunt`
 
-Compiles LESS files.
+Compiles Less files and runs lint test.
+
+#### Compile: `grunt dist`
+
+Compiles Less files.
+
+#### Test: `grunt test`
+
+Lints compiled files.
 
 #### Watch: `grunt watch`
 
-Watches Less files and automatically building them whenever you save.
+Watches Less files and automatically building and linting them when they're
+changed.
 
 ## License
 

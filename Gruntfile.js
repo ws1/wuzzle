@@ -9,13 +9,16 @@ module.exports = function (grunt) {
     // Metadata
     pkg: grunt.file.readJSON('package.json'),
 
-    // Paths
     wuzzle: {
       less: 'src/wuzzle.less',
       css: 'dist/wuzzle.css',
-      cssMin: 'dist/wuzzle.min.css',
-      banner: '/*! Wuzzle <%= pkg.version %> | <%= pkg.license %> License | http//git.io/wuzzle */\n'
+      cssMin: 'dist/wuzzle.min.css'
     },
+
+    banner: '/*!\n' +
+            ' * Wuzzle <%= pkg.version %> (http//git.io/wuzzle)\n' +
+            ' * Licensed under the <%= pkg.license %> License.\n' +
+            ' */\n',
 
     // Tasks configuration
     clean: {
@@ -40,9 +43,9 @@ module.exports = function (grunt) {
     },
 
     csscomb: {
-      sort: {
+      dist: {
         options: {
-          sortOrder: '.csscomb.json'
+          config: '.csscomb.json'
         },
         files: {
           '<%= wuzzle.css %>': ['<%= wuzzle.css %>']
@@ -54,7 +57,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           position: 'top',
-          banner: '<%= wuzzle.banner %>'
+          banner: '<%= banner %>'
         },
         files: {
           src: [
@@ -65,10 +68,23 @@ module.exports = function (grunt) {
       }
     },
 
+    csslint: {
+      dist: {
+        options: {
+          csslintrc: '.csslintrc'
+        },
+        src: '<%= wuzzle.css %>'
+      }
+    },
+
     watch: {
-      less: {
+      src: {
         files: 'src/*.less',
         tasks: ['less', 'csscomb', 'usebanner']
+      },
+      test: {
+        files: '<%= wuzzle.css %>',
+        tasks: 'csslint'
       }
     }
   });
@@ -76,6 +92,12 @@ module.exports = function (grunt) {
   // Load plugins
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
+  // Distribution task
+  grunt.registerTask('dist', ['clean', 'less', 'csscomb', 'usebanner']);
+
+  // Test task
+  grunt.registerTask('test', 'csslint');
+
   // Default task
-  grunt.registerTask('default', ['clean', 'less', 'csscomb', 'usebanner']);
+  grunt.registerTask('default', ['dist', 'test']);
 };
