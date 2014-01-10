@@ -10,6 +10,9 @@ To get started, check out
 * [**ZIP package**](https://github.com/ws1/wuzzle/archive/master.zip)
 * **Bower:** `bower install wuzzle`
 
+Wuzzle is also available on
+[cdnjs](http://cdnjs.com/libraries/wuzzle/).
+
 ## Compile
 
 Wuzzle uses [Grunt](http://gruntjs.com) to compile Less code.
