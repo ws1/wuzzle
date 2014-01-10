@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 
     // Tasks configuration
     clean: {
-      dist: ['dist']
+      dist: 'dist'
     },
 
     less: {
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
           config: '.csscomb.json'
         },
         files: {
-          '<%= wuzzle.css %>': ['<%= wuzzle.css %>']
+          '<%= wuzzle.css %>': '<%= wuzzle.css %>'
         }
       }
     },
