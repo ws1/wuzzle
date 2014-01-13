@@ -3,48 +3,48 @@
 //
 
 // Common styles
-.make-grid-columns();
+.wz-make-grid-columns();
 
 // Extra small grid
 //
 // Columns, offsets, pushes, and pulls for the extra small device range, up to
 // the phones.
-.make-grid-columns-float(xs);
-.make-grid(@column-number, xs, width);
-.make-grid(@column-number, xs, pull);
-.make-grid(@column-number, xs, push);
-.make-grid(@column-number, xs, offset);
+.wz-make-grid-columns-float(xs);
+.wz-make-grid(@wz-column-number, xs, width);
+.wz-make-grid(@wz-column-number, xs, pull);
+.wz-make-grid(@wz-column-number, xs, push);
+.wz-make-grid(@wz-column-number, xs, offset);
 
 // Small grid
 //
 // Columns, offsets, pushes, and pulls for the small device range, from phones
 // to tablets.
-@media (min-width: @screen-sm-min) {
-  .make-grid-columns-float(sm);
-  .make-grid(@column-number, sm, width);
-  .make-grid(@column-number, sm, pull);
-  .make-grid(@column-number, sm, push);
-  .make-grid(@column-number, sm, offset);
+@media (min-width: @wz-screen-sm-min) {
+  .wz-make-grid-columns-float(sm);
+  .wz-make-grid(@wz-column-number, sm, width);
+  .wz-make-grid(@wz-column-number, sm, pull);
+  .wz-make-grid(@wz-column-number, sm, push);
+  .wz-make-grid(@wz-column-number, sm, offset);
 }
 
 // Medium grid
 //
 // Columns, offsets, pushes, and pulls for the desktop device range.
-@media (min-width: @screen-md-min) {
-  .make-grid-columns-float(md);
-  .make-grid(@column-number, md, width);
-  .make-grid(@column-number, md, pull);
-  .make-grid(@column-number, md, push);
-  .make-grid(@column-number, md, offset);
+@media (min-width: @wz-screen-md-min) {
+  .wz-make-grid-columns-float(md);
+  .wz-make-grid(@wz-column-number, md, width);
+  .wz-make-grid(@wz-column-number, md, pull);
+  .wz-make-grid(@wz-column-number, md, push);
+  .wz-make-grid(@wz-column-number, md, offset);
 }
 
 // Large grid
 //
 // Columns, offsets, pushes, and pulls for the large desktop device range.
-@media (min-width: @screen-lg-min) {
-  .make-grid-columns-float(lg);
-  .make-grid(@column-number, lg, width);
-  .make-grid(@column-number, lg, pull);
-  .make-grid(@column-number, lg, push);
-  .make-grid(@column-number, lg, offset);
+@media (min-width: @wz-screen-lg-min) {
+  .wz-make-grid-columns-float(lg);
+  .wz-make-grid(@wz-column-number, lg, width);
+  .wz-make-grid(@wz-column-number, lg, pull);
+  .wz-make-grid(@wz-column-number, lg, push);
+  .wz-make-grid(@wz-column-number, lg, offset);
 }

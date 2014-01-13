@@ -6,21 +6,21 @@
 *,
 *:before,
 *:after {
-  .box-sizing(border-box);
+  .wz-box-sizing(border-box);
 }
 
 // Fixed container
 .container {
-  width: @container-width;
-  .make-container();
+  width: @wz-container-width;
+  .wz-make-container();
 }
 
 // Fluid container
-.container-fluid {
-  .make-container()
+.@{wz-prefix}container-fluid {
+  .wz-make-container()
 }
 
 // Wrapper for series of columns
-.row {
-  .make-row();
+.@{wz-prefix}row {
+  .wz-make-row();
 }

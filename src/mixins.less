@@ -6,7 +6,7 @@
 // ---------
 
 // Set box sizing
-.box-sizing(@box-model) {
+.wz-box-sizing(@box-model) {
   -webkit-box-sizing: @box-model;
      -moz-box-sizing: @box-model;
           box-sizing: @box-model;
@@ -14,7 +14,7 @@
 
 // Clearfix
 // [http://nicolasgallagher.com/micro-clearfix-hack/]
-.clearfix() {
+.wz-clearfix() {
   &:before,
   &:after {
     display: table;
@@ -27,7 +27,7 @@
 }
 
 // State mixins for responsive utilities
-.responsive-visible() {
+.wz-responsive-visible() {
   display: block !important;
 
   tr& { display: table-row !important; }
@@ -35,7 +35,7 @@
   td& { display: table-cell !important; }
 }
 
-.responsive-hidden() {
+.wz-responsive-hidden() {
   display: none !important;
 }
 
@@ -44,7 +44,7 @@
 // Most of grid generation styles are taken from Bootstrap
 
 // Generate container
-.make-container() {
+.wz-make-container() {
   margin-right: auto;
   margin-left: auto;
 
@@ -52,7 +52,7 @@
 }
 
 // Generate a wrapper for a series of columns
-.make-row(@gutter: @gutter-width) {
+.wz-make-row(@gutter: @wz-gutter-width) {
   margin-right: (@gutter / -2);
   margin-left: (@gutter / -2);
 
@@ -60,169 +60,169 @@
 }
 
 // Generate the extra small columns
-.make-xs-column(@columns; @gutter: @gutter-width) {
+.wz-make-xs-column(@columns; @gutter: @wz-gutter-width) {
   position: relative;
   float: left;
-  width: percentage((@columns / @column-number));
+  width: percentage((@columns / @wz-column-number));
   padding-left: (@gutter / 2);
   padding-right: (@gutter / 2);
 }
 
 // Generate the small columns
-.make-sm-column(@columns; @gutter: @gutter-width) {
+.wz-make-sm-column(@columns; @gutter: @wz-gutter-width) {
   position: relative;
   padding-left: (@gutter / 2);
   padding-right: (@gutter / 2);
 
   // Calculate width based on number of columns available
-  @media (min-width: @screen-sm-min) {
+  @media (min-width: @wz-screen-sm-min) {
     float: left;
-    width: percentage((@columns / @column-number));
+    width: percentage((@columns / @wz-column-number));
   }
 }
 
 // Generate the small column offsets
-.make-sm-column-offset(@columns) {
-  @media (min-width: @screen-sm-min) {
-    margin-left: percentage((@columns / @column-number));
+.wz-make-sm-column-offset(@columns) {
+  @media (min-width: @wz-screen-sm-min) {
+    margin-left: percentage((@columns / @wz-column-number));
   }
 }
-.make-sm-column-push(@columns) {
-  @media (min-width: @screen-sm-min) {
-    left: percentage((@columns / @column-number));
+.wz-make-sm-column-push(@columns) {
+  @media (min-width: @wz-screen-sm-min) {
+    left: percentage((@columns / @wz-column-number));
   }
 }
-.make-sm-column-pull(@columns) {
-  @media (min-width: @screen-sm-min) {
-    right: percentage((@columns / @column-number));
+.wz-make-sm-column-pull(@columns) {
+  @media (min-width: @wz-screen-sm-min) {
+    right: percentage((@columns / @wz-column-number));
   }
 }
 
 // Generate the medium columns
-.make-md-column(@columns; @gutter: @gutter-width) {
+.wz-make-md-column(@columns; @gutter: @wz-gutter-width) {
   position: relative;
   padding-left: (@gutter / 2);
   padding-right: (@gutter / 2);
 
   // Calculate width based on number of columns available
-  @media (min-width: @screen-md-min) {
+  @media (min-width: @wz-screen-md-min) {
     float: left;
-    width: percentage((@columns / @column-number));
+    width: percentage((@columns / @wz-column-number));
   }
 }
 
 // Generate the medium column offsets
-.make-md-column-offset(@columns) {
-  @media (min-width: @screen-md-min) {
-    margin-left: percentage((@columns / @column-number));
+.wz-make-md-column-offset(@columns) {
+  @media (min-width: @wz-screen-md-min) {
+    margin-left: percentage((@columns / @wz-column-number));
   }
 }
-.make-md-column-push(@columns) {
-  @media (min-width: @screen-md) {
-    left: percentage((@columns / @column-number));
+.wz-make-md-column-push(@columns) {
+  @media (min-width: @wz-screen-md-min) {
+    left: percentage((@columns / @wz-column-number));
   }
 }
-.make-md-column-pull(@columns) {
-  @media (min-width: @screen-md-min) {
-    right: percentage((@columns / @column-number));
+.wz-make-md-column-pull(@columns) {
+  @media (min-width: @wz-screen-md-min) {
+    right: percentage((@columns / @wz-column-number));
   }
 }
 
 // Generate the large columns
-.make-lg-column(@columns; @gutter: @gutter-width) {
+.wz-make-lg-column(@columns; @gutter: @wz-gutter-width) {
   position: relative;
   padding-left: (@gutter / 2);
   padding-right: (@gutter / 2);
 
   // Calculate width based on number of columns available
-  @media (min-width: @screen-lg-min) {
+  @media (min-width: @wz-screen-lg-min) {
     float: left;
-    width: percentage((@columns / @column-number));
+    width: percentage((@columns / @wz-column-number));
   }
 }
 
 // Generate the large column offsets
-.make-lg-column-offset(@columns) {
-  @media (min-width: @screen-lg-min) {
-    margin-left: percentage((@columns / @column-number));
+.wz-make-lg-column-offset(@columns) {
+  @media (min-width: @wz-screen-lg-min) {
+    margin-left: percentage((@columns / @wz-column-number));
   }
 }
-.make-lg-column-push(@columns) {
-  @media (min-width: @screen-lg-min) {
-    left: percentage((@columns / @column-number));
+.wz-make-lg-column-push(@columns) {
+  @media (min-width: @wz-screen-lg-min) {
+    left: percentage((@columns / @wz-column-number));
   }
 }
-.make-lg-column-pull(@columns) {
-  @media (min-width: @screen-lg-min) {
-    right: percentage((@columns / @column-number));
+.wz-make-lg-column-pull(@columns) {
+  @media (min-width: @wz-screen-lg-min) {
+    right: percentage((@columns / @wz-column-number));
   }
 }
 
 // Make columns
-.make-grid-columns() {
+.wz-make-grid-columns() {
   // Common styles for all sizes of grid columns
-  .col(@index) when (@index = 1) {
-    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
-    .col(@index + 1, @item);
+  .wz-col(@index) when (@index = 1) {
+    @item: ~".@{wz-prefix}col-xs-@{index}, .@{wz-prefix}col-sm-@{index}, .@{wz-prefix}col-md-@{index}, .@{wz-prefix}col-lg-@{index}";
+    .wz-col(@index + 1, @item);
   }
-  .col(@index, @list) when (@index =< @column-number) {
-    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
-    .col(@index + 1, ~"@{list}, @{item}");
+  .wz-col(@index, @list) when (@index =< @wz-column-number) {
+    @item: ~".@{wz-prefix}col-xs-@{index}, .@{wz-prefix}col-sm-@{index}, .@{wz-prefix}col-md-@{index}, .@{wz-prefix}col-lg-@{index}";
+    .wz-col(@index + 1, ~"@{list}, @{item}");
   }
-  .col(@index, @list) when (@index > @column-number) {
+  .wz-col(@index, @list) when (@index > @wz-column-number) {
     @{list} {
       position: relative;
-      padding-left: (@gutter-width / 2);
-      padding-right: (@gutter-width / 2);
+      padding-left: (@wz-gutter-width / 2);
+      padding-right: (@wz-gutter-width / 2);
     }
   }
-  .col(1);
+  .wz-col(1);
 }
 
-.make-grid-columns-float(@class) {
-  .col(@index) when (@index = 1) {
-    @item: ~".col-@{class}-@{index}";
-    .col(@index + 1, @item);
+.wz-make-grid-columns-float(@class) {
+  .wz-col(@index) when (@index = 1) {
+    @item: ~".@{wz-prefix}col-@{class}-@{index}";
+    .wz-col(@index + 1, @item);
   }
-  .col(@index, @list) when (@index =< @column-number) {
-    @item: ~".col-@{class}-@{index}";
-    .col(@index + 1, ~"@{list}, @{item}");
+  .wz-col(@index, @list) when (@index =< @wz-column-number) {
+    @item: ~".@{wz-prefix}col-@{class}-@{index}";
+    .wz-col(@index + 1, ~"@{list}, @{item}");
   }
-  .col(@index, @list) when (@index > @column-number) {
+  .wz-col(@index, @list) when (@index > @wz-column-number) {
     @{list} {
       float: left;
     }
   }
-  .col(1);
+  .wz-col(1);
 }
 
 // Calculate grid size
-.calc-grid(@index, @class, @type) when (@type = width) and (@index > 0) {
-  .col-@{class}-@{index} {
-    width: percentage((@index / @column-number));
+.wz-calc-grid(@index, @class, @type) when (@type = width) and (@index > 0) {
+  .@{wz-prefix}col-@{class}-@{index} {
+    width: percentage((@index / @wz-column-number));
   }
 }
 
-.calc-grid(@index, @class, @type) when (@type = push) {
-  .col-@{class}-push-@{index} {
-    left: percentage((@index / @column-number));
+.wz-calc-grid(@index, @class, @type) when (@type = push) {
+  .@{wz-prefix}col-@{class}-push-@{index} {
+    left: percentage((@index / @wz-column-number));
   }
 }
 
-.calc-grid(@index, @class, @type) when (@type = pull) {
-  .col-@{class}-pull-@{index} {
-    right: percentage((@index / @column-number));
+.wz-calc-grid(@index, @class, @type) when (@type = pull) {
+  .@{wz-prefix}col-@{class}-pull-@{index} {
+    right: percentage((@index / @wz-column-number));
   }
 }
 
-.calc-grid(@index, @class, @type) when (@type = offset) {
-  .col-@{class}-offset-@{index} {
-    margin-left: percentage((@index / @column-number));
+.wz-calc-grid(@index, @class, @type) when (@type = offset) {
+  .@{wz-prefix}col-@{class}-offset-@{index} {
+    margin-left: percentage((@index / @wz-column-number));
   }
 }
 
 // Basic looping in LESS
-.make-grid(@index, @class, @type) when (@index >= 0) {
-  .calc-grid(@index, @class, @type);
-  .make-grid(@index - 1, @class, @type);
+.wz-make-grid(@index, @class, @type) when (@index >= 0) {
+  .wz-calc-grid(@index, @class, @type);
+  .wz-make-grid(@index - 1, @class, @type);
 }

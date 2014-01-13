@@ -3,57 +3,57 @@
 //
 
 // Toggle visibility over a various screen sizes
-.visible-xs,
-.visible-sm,
-.visible-md,
-.visible-lg {
-  .responsive-hidden();
+.@{wz-prefix}visible-xs,
+.@{wz-prefix}visible-sm,
+.@{wz-prefix}visible-md,
+.@{wz-prefix}visible-lg {
+  .wz-responsive-hidden();
 }
 
-.visible-xs {
-  @media (max-width: @screen-xs-max) {
-    .responsive-visible();
+.@{wz-prefix}visible-xs {
+  @media (max-width: @wz-screen-xs-max) {
+    .wz-responsive-visible();
   }
 }
 
-.visible-sm {
-  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-    .responsive-visible();
+.@{wz-prefix}visible-sm {
+  @media (min-width: @wz-screen-sm-min) and (max-width: @wz-screen-sm-max) {
+    .wz-responsive-visible();
   }
 }
 
-.visible-md {
-  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-    .responsive-visible();
+.@{wz-prefix}visible-md {
+  @media (min-width: @wz-screen-md-min) and (max-width: @wz-screen-md-max) {
+    .wz-responsive-visible();
   }
 }
 
-.visible-lg {
-  @media (min-width: @screen-lg-min) {
-    .responsive-visible();
+.@{wz-prefix}visible-lg {
+  @media (min-width: @wz-screen-lg-min) {
+    .wz-responsive-visible();
   }
 }
 
-.hidden-xs {
-  @media (max-width: @screen-xs-max) {
-    .responsive-hidden();
+.@{wz-prefix}hidden-xs {
+  @media (max-width: @wz-screen-xs-max) {
+    .wz-responsive-hidden();
   }
 }
 
-.hidden-sm {
-  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-    .responsive-hidden();
+.@{wz-prefix}hidden-sm {
+  @media (min-width: @wz-screen-sm-min) and (max-width: @wz-screen-sm-max) {
+    .wz-responsive-hidden();
   }
 }
 
-.hidden-md {
-  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-    .responsive-hidden();
+.@{wz-prefix}hidden-md {
+  @media (min-width: @wz-screen-md-min) and (max-width: @wz-screen-md-max) {
+    .wz-responsive-hidden();
   }
 }
 
-.hidden-lg {
-  @media (min-width: @screen-lg-min) {
-    .responsive-hidden();
+.@{wz-prefix}hidden-lg {
+  @media (min-width: @wz-screen-lg-min) {
+    .wz-responsive-hidden();
   }
 }
