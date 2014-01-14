@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
   // Configuration
   grunt.initConfig({
-    // Metadata
+    // Meta data
     pkg: grunt.file.readJSON('package.json'),
 
     wuzzle: {
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
             ' * Licensed under the <%= pkg.license %> License.\n' +
             ' */\n',
 
-    // Tasks configuration
+    // Tasks
     clean: {
       dist: 'dist'
     },
