@@ -10,7 +10,6 @@
     "grunt": "0.4.x",
     "grunt-banner": "0.2.x",
     "grunt-contrib-clean": "0.5.x",
-    "grunt-contrib-csslint": "0.2.x",
     "grunt-contrib-less": "0.9.x",
     "grunt-contrib-watch": "0.5.x",
     "grunt-csscomb": "2.0.x",
