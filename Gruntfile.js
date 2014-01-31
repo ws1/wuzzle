@@ -68,23 +68,10 @@ module.exports = function (grunt) {
       }
     },
 
-    csslint: {
-      dist: {
-        options: {
-          csslintrc: '.csslintrc'
-        },
-        src: '<%= wuzzle.css %>'
-      }
-    },
-
     watch: {
       src: {
         files: 'src/*.less',
         tasks: ['less', 'csscomb', 'usebanner']
-      },
-      test: {
-        files: '<%= wuzzle.css %>',
-        tasks: 'csslint'
       }
     }
   });
@@ -92,12 +79,6 @@ module.exports = function (grunt) {
   // Load plugins
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
-  // Distribution task
-  grunt.registerTask('dist', ['clean', 'less', 'csscomb', 'usebanner']);
-
-  // Test task
-  grunt.registerTask('test', 'csslint');
-
   // Default task
-  grunt.registerTask('default', ['dist', 'test']);
+  grunt.registerTask('default', ['clean', 'less', 'csscomb', 'usebanner']);
 };

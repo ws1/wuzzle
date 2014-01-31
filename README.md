@@ -25,30 +25,21 @@ From the command line:
 
 ```bash
 $ npm install -g grunt-cli
-$ npm install # from root Wuzzle directory
+$ npm install # from the root Wuzzle directory
 ```
 
 When completed, you'll be able to run the various Grunt commands provided from
 the command line.
 
-### Available commands
+### Commands
 
 #### Default: `grunt`
 
-Compiles Less files and runs lint test.
-
-#### Compile: `grunt dist`
-
 Compiles Less files.
-
-#### Test: `grunt test`
-
-Lints compiled files.
 
 #### Watch: `grunt watch`
 
-Watches Less files and automatically building and linting them when they're
-changed.
+Watches Less files and automatically compiling them when they're changed.
 
 ## License
 
