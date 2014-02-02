@@ -10,5 +10,6 @@
   "version": "1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/ws1/wuzzle",
-  "main": "dist/wuzzle.css"
+  "main": "dist/wuzzle.css",
+  "ignore": ["**/.*"]
 }
