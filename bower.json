@@ -11,5 +11,10 @@
   "license": "MIT",
   "homepage": "https://github.com/ws1/wuzzle",
   "main": "dist/wuzzle.css",
-  "ignore": ["**/.*"]
+  "ignore": [
+    "**/.*",
+    "Gruntfile.js",
+    "package.json",
+    "src"
+  ]
 }
