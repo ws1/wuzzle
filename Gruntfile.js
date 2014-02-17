@@ -9,12 +9,14 @@ module.exports = function (grunt) {
     // Meta data
     pkg: grunt.file.readJSON('package.json'),
 
+    // Paths
     wuzzle: {
       less: 'src/wuzzle.less',
       css: 'dist/wuzzle.css',
       cssMin: 'dist/wuzzle.min.css'
     },
 
+    // Banner
     banner: '/*!\n' +
             ' * Wuzzle <%= pkg.version %> (http//git.io/wuzzle)\n' +
             ' * Licensed under the <%= pkg.license %> License.\n' +
