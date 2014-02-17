@@ -7,11 +7,12 @@ To get started, check out
 
 ## Download
 
-* [**ZIP package**](https://github.com/ws1/wuzzle/archive/master.zip)
-* **Bower:** `bower install wuzzle`
+- [**ZIP package**](https://github.com/ws1/wuzzle/archive/master.zip)
+- **Bower:** `bower install wuzzle`
 
-Wuzzle is also available on
-[cdnjs](http://cdnjs.com/libraries/wuzzle/).
+### CDN
+
+- [cdnjs](http://cdnjs.com/libraries/wuzzle/).
 
 ## Compile
 
