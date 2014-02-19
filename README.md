@@ -12,7 +12,7 @@ To get started, check out
 
 ### CDN
 
-- [cdnjs](http://cdnjs.com/libraries/wuzzle/).
+- [cdnjs](http://cdnjs.com/libraries/wuzzle/)
 
 ## Compile
 
