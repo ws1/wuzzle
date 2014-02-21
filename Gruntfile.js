@@ -44,6 +44,16 @@ module.exports = function (grunt) {
       }
     },
 
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions', 'ie 9', 'android 2.3', 'opera 12']
+      },
+      dist: {
+        src: 'dist/wuzzle.css',
+        dest: 'dist/wuzzle.css'
+      },
+    },
+
     csscomb: {
       dist: {
         options: {
@@ -81,5 +91,12 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   // Default task
-  grunt.registerTask('default', ['clean', 'less', 'csscomb', 'usebanner']);
+  grunt.registerTask('default', [
+    'clean',
+    'less:dist',
+    'autoprefixer',
+    'less:distMin',
+    'csscomb',
+    'usebanner'
+  ]);
 };
