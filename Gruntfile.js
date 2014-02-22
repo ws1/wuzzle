@@ -29,18 +29,16 @@ module.exports = function (grunt) {
 
     less: {
       dist: {
-        files: {
-          '<%= wuzzle.css %>': '<%= wuzzle.less %>'
-        }
+        src: '<%= wuzzle.less %>',
+        dest: '<%= wuzzle.css %>'
       },
       distMin: {
         options: {
           cleancss: true,
           report: 'min'
         },
-        files: {
-          '<%= wuzzle.cssMin %>': '<%= wuzzle.css %>'
-        }
+        src: '<%= wuzzle.css %>',
+        dest: '<%= wuzzle.cssMin %>'
       }
     },
 
@@ -59,9 +57,8 @@ module.exports = function (grunt) {
         options: {
           config: '.csscomb.json'
         },
-        files: {
-          '<%= wuzzle.css %>': '<%= wuzzle.css %>'
-        }
+        src: '<%= wuzzle.css %>',
+        dest: '<%= wuzzle.css %>'
       }
     },
 
@@ -70,12 +67,10 @@ module.exports = function (grunt) {
         options: {
           banner: '<%= banner %>'
         },
-        files: {
-          src: [
-            '<%= wuzzle.css %>',
-            '<%= wuzzle.cssMin %>'
-          ]
-        }
+        src: [
+          '<%= wuzzle.css %>',
+          '<%= wuzzle.cssMin %>'
+        ]
       }
     },
 
