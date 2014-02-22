@@ -47,8 +47,8 @@ module.exports = function (grunt) {
         browsers: ['last 2 versions', 'ie 9', 'android 2.3', 'opera 12']
       },
       dist: {
-        src: 'dist/wuzzle.css',
-        dest: 'dist/wuzzle.css'
+        src: '<%= wuzzle.css %>',
+        dest: '<%= wuzzle.css %>'
       },
     },
 
