@@ -1,7 +1,7 @@
 # Wuzzle
 
-[![Build status](https://travis-ci.org/ws1/wuzzle.png?branch=master)](https://travis-ci.org/ws1/wuzzle) 
-[![devDependency status](https://david-dm.org/ws1/wuzzle/dev-status.png?theme=shields.io)](https://david-dm.org/ws1/wuzzle#info=devDependencies)
+[![Build Status](https://travis-ci.org/ws1/wuzzle.svg?branch=master)](https://travis-ci.org/ws1/wuzzle) 
+[![devDependency Status](https://david-dm.org/ws1/wuzzle/dev-status.svg)](https://david-dm.org/ws1/wuzzle#info=devDependencies)
 
 > Responsive, minimal and customizable grid system
 
