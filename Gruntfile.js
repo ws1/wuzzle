@@ -1,3 +1,8 @@
+/*!
+ * Wuzzle gruntfile (http://git.io/wuzzle)
+ * Licensed under the MIT License.
+ */
+
 module.exports = function (grunt) {
   'use strict';
 
